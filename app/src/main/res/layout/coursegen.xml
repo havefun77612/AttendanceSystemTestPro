@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Chat.MainChat">
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightblue300"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tabIndicatorColor="@color/white"
+            app:tabSelectedTextColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/qr"
+        android:layout_width="match_parent"
+        android:layout_height="156dp"
+        app:srcCompat="@drawable/frame" />
+
+    <EditText
+        android:id="@+id/cName"
+        style="@style/modifiedEditText"
+        android:hint="Course Name"
+        android:padding="25dp"
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/cCode"
+        style="@style/modifiedEditText"
+        android:padding="25dp"
+        android:hint="Course Code"
+        android:maxLines="1" />
+
+    <Spinner
+        android:id="@+id/cLevel"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:hint="Course Level"
+        android:maxLines="1" />
+
+    <Button
+        android:id="@+id/gen"
+        android:layout_width="158dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/profile_back_button"
+        android:layout_height="wrap_content"
+        android:text="gen" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/profile_back_button"
+            android:text="save" />
+    </LinearLayout>
+</LinearLayout>
